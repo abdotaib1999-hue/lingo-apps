@@ -1,0 +1,22 @@
+{
+  "name": "lingo-apps",
+  "version": "1.0.0",
+  "description": "Lingo chat app (desktop and Android shells)",
+  "author": "Lingo",
+  "main": "main.js",
+  "dependencies": {
+    "@capacitor/android": "^6.2.0",
+    "@capacitor/core": "^6.2.0"
+  },
+  "devDependencies": {
+    "@capacitor/cli": "^6.2.0",
+    "electron": "^33.0.0",
+    "electron-builder": "^25.0.0"
+  },
+  "build": {
+    "appId": "app.lingo.chat",
+    "productName": "Lingo",
+    "files": ["main.js", "site.txt", "icon.png"],
+    "win": { "target": "nsis", "icon": "icon.png" }
+  }
+}
